@@ -6,10 +6,10 @@ from mc_core import *
 m = np.matrix([
 [0,1,1,0]
 ],dtype=int)
-print "Message Text:\t",m
+print("Message Text:\t",m)
 tPriv = privateKeyH84()
 tPub = publicKeyH84(tPriv.makeGPrime())
 ct = tPub.encrypt(m)
-print "Cipher Text:\t",ct
+print("Cipher Text:\t",ct)
 mt = tPriv.decrypt(ct)
-print "Decoded Text:\t",mt
+print("Decoded Text:\t",mt)
