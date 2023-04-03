@@ -6,6 +6,6 @@ from mc_core import *
 tPriv = privateKeyH1611()
 tPriv.printCode()
 brute = bruteForcerH1611(tPriv.makeGPrime())
-print "Attempting to Crack..."
+print("Attempting to Crack...")
 brute.attemptKey()
 brute.printCode()
